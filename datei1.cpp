@@ -2,9 +2,8 @@
 #include <iostream>
 #include <omp.h>
 #include <time.h>
+#include <cstdlib>
 #include "datei1.h"
-
-// Test
 
 void mein_print()
 {
@@ -87,7 +86,7 @@ void random_array(int *rand_array, int N, int range)
 {
 	int i;
 	srand(time(NULL));
-
+	
 	if(range <= 1)
 		for (i = 0; i < N; i++)
 			rand_array[i] = rand();
